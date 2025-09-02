@@ -1,0 +1,142 @@
+/* cysecpage.css - Modern, clean, and professional style for all pages */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    background: #1a2233;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a:focus {
+    background: #2d3a56;
+    color: crimson;
+}
+
+.container {
+    flex: 1;
+    max-width: 700px;
+    margin: 2.5rem auto 1.5rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(30,40,60,0.08);
+    padding: 2.5rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #1a2233;
+    margin-bottom: 1rem;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    border: 4px solid #e0e6ed;
+    background: #e0e6ed;
+    border-radius: 0;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 4px solid #e0e6ed;
+    background: #e0e6ed;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin: 0.5rem 0.7rem;
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(90deg, #1a2233 60%, #2d3a56 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(30,40,60,0.07);
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+    background: linear-gradient(90deg, crimson 60%, crimson 100%);
+    color: white;
+    transform: translateY(-2px) scale(1.04);
+}
+
+footer {
+    background: #1a2233;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0 0.7rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    margin-top: auto;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.03);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1.2rem 0.5rem;
+    }
+    nav {
+        gap: 1rem;
+    }
+    img {
+        width: 90px;
+        height: 90px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
